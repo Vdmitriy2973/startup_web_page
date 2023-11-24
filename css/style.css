@@ -1,0 +1,1055 @@
+/* 
+** 0. General Styles
+*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* 
+** 1. Header styles
+*/
+
+.header__inner
+{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.navigation
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 23px;
+    padding-bottom: 15px;
+}
+
+.logo
+{
+    font-size: 43px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.logo a 
+{
+    color: #038c8c;
+    text-decoration: none;
+}
+
+.logo span 
+{
+    background: linear-gradient(to top,#0aa096,#0eb0a5,#17c0b5,#1fd0c4,#2ee2d6,#42eee3);
+    color: #fff;
+    margin-right: 5px;
+}
+
+.navbar
+{
+    display: flex;
+    list-style: none;
+    font-size: 19px;
+    color: #787878;
+}
+
+.navbar li 
+{
+    margin-right:10px;
+    margin-left: 10px;
+}
+
+.navbar li a 
+{
+    color: #787878;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+}
+
+.navbar li:first-child
+{
+    margin-left: 0px;
+}
+
+.navbar li:last-child
+{
+    margin-right: 0px;
+}
+
+
+@media (max-width:1072px)
+{
+    .header__inner
+    {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .navigation
+    {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media(max-width:250px)
+{
+    .navbar
+    {
+        font-size: 15px;
+    }
+}
+/* 
+** 2. Products styles
+*/
+
+
+.products__outer
+{
+    background: linear-gradient(to right,#00767e,#07a59c,#10c6af);
+    height: 60vh;
+}
+
+.products__inner
+{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.phone
+{
+    display: flex;
+    float: left;
+    padding-top: 80px;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.phone img 
+{
+    position: relative;
+    z-index: 99;
+}
+
+.circle
+{
+    margin: 0 auto;
+    position: absolute;
+    padding: 150px;
+    height: 475px;
+    width: 475px;
+    background: radial-gradient(#1bd0f1 20%,#1be2d1 30%,#13b9ab 40%,#089593 50%, #007980 50%);
+    border-radius: 50%;
+    display: block;
+}
+
+.app
+{
+    display: grid;
+    color: #fff;
+    padding-left:115px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.app_title
+{
+    display: flex;
+    margin-top: 200px;
+    z-index: 2;
+}
+
+.app_title p 
+{
+    margin-left: 15px;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 21px;
+}
+
+.app_details
+{
+    margin-top:60px;
+}
+
+.app_details h2 
+{
+    font-size: 29px;
+    font-weight: 100;
+}
+
+.app_details p 
+{
+    font-size:17px;
+}
+
+.app_button button 
+{
+    display: flex;
+    margin-top: 33px;
+    background-color: #5dedda;
+    color: #fff;
+    border:none;
+    outline: none;
+    transition: .2s ease-in;
+    align-items: center;
+    padding: 9px 14px;
+    font-size: 21px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.app_button button:hover 
+{
+    background-color: #54d3c3;
+}
+
+.app_button button:active 
+{
+    background-color: #378177;
+}
+
+@media(orientation:landscape)
+{
+    @media (max-width: 1292px)
+    {
+
+        @media(max-height: 712px)
+        {
+            .products__outer
+            {
+                height: 100vh;
+            }
+        }
+        .products__inner
+        {
+            max-width: 768px;
+        }
+
+        .phone 
+        {
+            padding-top: 40px;
+        }
+
+        .phone img 
+        {
+            height: 375px;
+        }
+
+        .circle
+        {
+            height: 325px;
+            width: 325px;
+        }
+
+        .app_title
+        {
+            margin-top: 80px;
+        }
+    }
+
+    @media(max-width:1152px)
+    {
+
+        .products__outer
+        {
+            height: 89vh;
+        }
+        .products__inner
+        {
+            max-width: 524px;
+        }
+
+        .phone 
+        {
+            margin-top: 20px;
+        }
+        .phone img 
+        {
+            height: 220px;
+        }
+        .circle
+        {
+            height: 275px;
+            width: 275px;
+        }
+
+        .app_title
+        {
+            margin-top: 40px;
+        }
+
+        .app_details
+        {
+            margin-top:40px;
+        }
+    }
+
+    @media(max-width:1028px)
+    {
+
+        .products__inner
+        {
+            max-width: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        @media (min-height:599px)
+        {
+            .products__outer
+            {
+                height: 55vh;
+            }
+        }
+
+        @media(min-height:720px)
+        {
+            .products__outer
+            {
+                height: 45vh;
+            }
+        }
+    }
+    @media(max-width:920px)
+    {
+        .products__outer
+        {
+            height: 100vh;
+        }
+
+        .products__inner
+        {
+            justify-content: space-evenly;
+        }
+        .phone img  
+        {
+            max-height: 70%;
+            max-width: 70%;
+        }
+
+        .circle
+        {
+            padding: 75px;
+            height: 237px;
+            width: 237px;
+        }
+    }
+    @media(max-width:720px)
+    {
+        .products__outer
+        {
+            height: 200vh;
+        }
+
+        .products__inner
+        {
+            display: grid;
+        }
+
+        .app
+        {
+            padding-left: 0px;
+        }
+
+        .app_title
+        {
+            justify-content: center;
+        }
+
+        .app_details
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .app_button 
+        {
+            margin: 0 auto;
+        }
+    }
+
+    @media(max-width:640px)
+    {
+        @media(min-height: 300px)
+        {
+            .products__outer
+            {
+                height: 150vh;
+            }
+        }
+
+        .app_title 
+        {
+            margin-top: 15px;
+            align-items: center;
+        }
+
+        .app_title img 
+        {
+            max-width: 30%;
+            max-height: 30%;
+        }
+        
+        .phone 
+        {
+            margin-top: 0px;
+            padding-top: 10px;
+        }
+
+        .circle
+        {
+            padding: 45px;
+            height: 197px;
+            width: 197px;
+        }
+
+        .app_title p 
+        {
+            margin-left: 7px;
+            font-size: 15px;
+        }
+
+        .app_details
+        {
+            margin-top: 20px;
+        }
+
+        .app_details h2 
+        {
+            font-size: 20px;
+        }
+
+        .app_details p 
+        {
+            font-size: 10px;
+        }
+    }
+    
+    @media (max-width: 500px)
+    {
+        .products__outer
+        {
+            height: 250vh;
+        }
+    }
+    
+}
+
+@media (orientation:portrait)
+{
+    @media(max-width: 1020px)
+    {
+        .products__outer
+        {
+            height: 70vh;
+        }
+        
+        @media(max-height: 1000px)
+        {
+            .products__outer
+            {
+                height: 90vh;
+            }
+        }
+
+        @media(max-height: 850px)
+        {
+            .products__outer
+            {
+                height: 100vh;
+            }
+        }
+
+        .products__inner
+        {
+            display: grid;
+            justify-content: center;
+
+        }
+
+        .app
+        {
+            padding-left: 0;
+        }
+
+        .app_title
+        {
+            margin-top: 50px;
+            justify-content: center;
+        }
+
+        .app_details
+        {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .app_button
+        {
+            margin: 0 auto;
+        }
+    }
+    @media(max-width:640px)
+    {
+        .phone img
+        {
+            height: 275px;
+        }
+        .circle
+        {
+            height: 225px;
+            width: 225px;
+        }
+    }
+
+
+    @media(max-width:540px)
+    {
+        .products__outer
+        {
+            height: 110vh;
+        }
+
+        @media(max-height:560px)
+        {
+            .products__outer
+            {
+                height: 120vh;
+            }
+        }
+    }
+    @media(max-width: 320px)
+    {
+        .phone img 
+        {
+            height: 75px;
+        }
+        .circle
+        {
+            padding: 75px;
+            height: 25px;
+            width: 25px;
+        }
+        
+        .app_title img 
+        {
+            margin-top:20px;
+            height: 50px;
+        }
+
+        .products__outer
+        {
+            height:90vh;
+        }
+
+        @media(max-height:500px)
+        {
+            .products__outer
+            {
+                height: 110vh;
+            }
+        }
+
+        @media(max-height:400px)
+        {
+            .products__outer
+            {
+                height: 130vh;
+            }
+        }
+    }
+
+    @media (max-width:250px)
+    {
+        .products__outer
+        {
+            height: 160vh;
+        }
+    }
+}
+
+/* 
+** 3. Services styles
+*/
+.services__outer
+{
+    min-height: 40vh;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.services__inner
+{
+    text-align: center;
+    justify-content: center;
+    display: block;
+}
+
+.services__title
+{
+    margin-top:50px;
+    font-size: 41px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #636363;
+    font-weight:lighter;    
+}
+
+.services__paragraph
+{
+    color: #9f9f9f;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.app__circle
+{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    height:410px;
+    width:410px;
+    background-color: #079491;
+    margin: 0 auto; 
+    font-size: 49px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.app__circle i 
+{
+    margin-top: 20%;
+}
+
+@media(max-width:900px)
+{
+    .services__outer
+    {
+        max-width: 768px;
+    }
+}
+
+@media(max-width:440px)
+{
+    .app__circle
+    {
+        height: 200px;
+        width: 200px;
+    }
+
+    .services__paragraph br 
+    {
+        display: none;
+    }
+    .app__circle 
+    {
+        font-size: 25px;
+    }
+}
+
+
+/* 
+** 4. Apps styles
+*/
+
+.apps__outer
+{
+    margin-top: 120px;
+    background-color: #01646c;
+    color: #fff;
+}
+
+.apps__outer ul 
+{
+    display: flex;
+    list-style: none;
+    max-width:100%;
+}
+
+.apps__outer ul li 
+{
+    display: flex;
+    flex:2;
+    justify-content: center;
+    align-items: center;
+    min-width: auto;
+    min-height: 170px;
+}
+
+.apps__outer ul li:nth-child(2)
+{
+    background-color: #097b84;
+}
+
+.apps__outer ul li:nth-child(3)
+{
+    background-color: #118f99;
+}
+
+.apps__outer ul li:nth-child(4)
+{
+    background-color: #1da0aa;
+}
+
+.apps__outer ul li:nth-child(5)
+{
+    background-color: #29b7c2;
+}
+
+.apps__outer ul li:nth-child(6)
+{
+    background-color: #3ccad5;
+}
+
+.apps__outer ul li i 
+{
+    font-size: 50px;
+}
+
+.apps__inner
+{
+    margin: 0 auto;
+    max-width:1024px;
+    display: flex;
+    padding-bottom: 75px;
+}
+
+.apps__outer img 
+{
+    margin-top: 120px;
+    max-width: 559px;
+}
+
+.apps_description
+{
+    margin-top:180px;
+}
+
+.apps_description h2 
+{
+    font-size: 39px;
+    font-weight: lighter;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.apps_description p 
+{
+    font-size: 17px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: lighter;
+}
+
+.apps_description .app_button__inner button
+{
+    display: flex;
+    background-color: #5dedda;
+    color: #fff;
+    border:none;
+    outline: none;
+    transition: .2s ease-in;
+    align-items: center;
+    padding: 9px 14px;
+    font-size: 21px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+@media(orientation:landscape)
+{
+    @media(max-width:1110px)
+    {
+        .apps__inner
+        {
+            justify-content: space-around;
+        }
+        .apps__inner img 
+        {
+            max-width: 300px;
+        }
+    }
+
+    @media(max-width:700px)
+    {
+
+        .apps__outer ul li 
+        {
+            min-height: 100px;
+        }
+        .apps__outer ul li i 
+        {
+            font-size: 35px;
+        }
+
+        .apps__inner
+        {
+            display: block;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .apps__inner img 
+        {
+            margin-top: 20px;
+        }
+
+        .apps_description
+        {
+            margin-top: 25px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .apps_description .app_button__inner button
+        {
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+    }
+
+    @media(max-width:500px)
+    {
+        .apps__outer ul li 
+        {
+            min-height: 70px;
+        }
+        .apps__outer ul li i 
+        {
+            font-size: 20px;
+        }
+
+        .apps__inner img
+        {
+            max-width: 200px;
+        }
+    }
+}
+
+@media(orientation:portrait)
+{
+    @media(max-width:768px)
+    {
+        .apps__inner
+        {
+            display: grid;
+            justify-content: center;
+        }
+
+        .apps__inner img 
+        {
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+
+        .apps_description
+        {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .app_button__inner button
+        {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
+
+    @media(max-width:658px)
+    {
+        .apps__inner img 
+        {
+            width: 350px;
+        }
+    }
+
+    @media(max-width:420px)
+    {
+        .apps__outer ul li 
+        {
+            min-height: 70px;
+        }
+        .apps__outer ul li i 
+        {
+            font-size: 20px;
+        }
+
+        .apps_description h2 
+        {
+            font-size:15px;
+        }
+        .apps__inner img 
+        {
+            width: 200px;
+        }
+    }
+}
+
+/* 
+** 5. Contact styles
+*/
+
+.contact__outer
+{
+    background-color: #fff;
+}
+
+.contact__inner
+{
+    display: flex;
+}
+
+.discount
+{
+    width:60%;
+    text-align: center;
+}
+
+.discount h2 
+{
+    font-size: 74px;
+    font-weight: lighter;
+    color: #61dcbb;
+    padding: 50px;
+    padding-bottom: 100px;
+}
+
+.discount h2 span
+{
+    font-weight: bold;
+    font-size: 200px;
+    color: #49d7b0;
+}
+
+.contact__inner .photo 
+{
+    width:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #49d7b0;
+}
+
+
+@media(orientation: landscape)
+{
+    @media(max-width:868px)
+    {
+        .contact__inner
+        {
+            display: block;
+        }
+
+        .discount
+        {
+            width:100%;
+        }
+
+        .contact__inner .photo 
+        {
+            width: 100%;
+            height: 350px;
+        }
+    }
+
+    @media(max-width:640px)
+    {
+        .discount h2
+        {
+            font-size: 45px;
+        }
+
+        .discount h2 span 
+        {
+            font-size: 100px;
+        }
+
+        .contact__inner .photo
+        {
+            height: 250px;
+        }
+    }
+}
+
+@media(orientation:portrait)
+{
+    @media(max-width:1028px)
+    {
+        .discount h2 
+        {
+            font-size: 45px;
+        }
+
+        .discount h2 span 
+        {
+            font-size:100px;
+        }
+    }
+
+    @media(max-width:880px)
+    {
+        .contact__inner
+        {
+            display: block;
+        }
+
+        .discount
+        {
+            width: 100%;
+        }
+
+        .contact__inner .photo 
+        {
+            width: 100%;
+        }
+    }
+
+    @media(max-width:480px)
+    {
+        .discount h2 
+        {
+            font-size: 25px;
+        }
+
+        .discount h2 span 
+        {
+            font-size:50px;
+        }
+        .contact__inner .photo img
+        {
+            height: 170px;
+        }
+    }
+}
+
+/*
+** 6. Footer styles
+*/
+
+
+footer 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 23px;
+    color: #9f9f9f;
+    font-weight: 300;
+}
+
+footer p 
+{
+    text-align: center;
+}
+
+@media(max-width:500px)
+{
+    footer p
+    {
+        font-size: 23px;
+    }
+}
